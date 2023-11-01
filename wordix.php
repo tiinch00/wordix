@@ -143,25 +143,27 @@ function escribirMensajeBienvenida($usuario)
 function esPalabra($cadena)
 {
     //int $cantCaracteres, $i, boolean $esLetra
-    $cantCaracteres = strlen($cadena);
+    $cantCaracteres = strlen($cadena); //cuanta la cantidad de caracteres de un string
     $esLetra = true;
     $i = 0;
     while ($esLetra && $i < $cantCaracteres) {
-        $esLetra =  ctype_alpha($cadena[$i]);
+        $esLetra =  ctype_alpha($cadena[$i]); //dice si los caracteres entan en el abcedario
         $i++;
     }
     return $esLetra;
 }
 
 /**
- *  ****COMPLETAR*****
+ * pide al usuario que ingrese una palabra de 5 letras y la retorna
+ * @param //vacio
+ * @return string
  */
 function leerPalabra5Letras()
 {
     //string $palabra
     echo "Ingrese una palabra de 5 letras: ";
     $palabra = trim(fgets(STDIN));
-    $palabra  = strtoupper($palabra);
+    $palabra  = strtoupper($palabra); //convierte en mayusculas la cadena
 
     while ((strlen($palabra) != 5) || !esPalabra($palabra)) {
         echo "Debe ingresar una palabra de 5 letras:";
