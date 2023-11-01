@@ -27,12 +27,14 @@ const ESTADO_LETRA_PERTENECE = "pertenece";
 /**************************************/
 
 /**
- *  ****COMPLETAR*****
+ * Pide un numero entre $min y $max y si el numero ingresado esta entre esos margenes retorna el numero
+ * @param int $min, $max
+ * @return int 
  */
 function solicitarNumeroEntre($min, $max)
 {
     //int $numero
-
+    echo "Ingrese un numero entre $min y $max";
     $numero = trim(fgets(STDIN));
 
     if (is_numeric($numero)) { //determina si un string es un número. puede ser float como entero.
@@ -119,8 +121,9 @@ function escribirSegunEstado($texto, $estado)
     }
 }
 
-/**
- * ****COMPLETAR*****
+/** Da la bienvenida al usuario
+ * @param string $usuario
+ * @return //retorna vacio
  */
 function escribirMensajeBienvenida($usuario)
 {
@@ -133,7 +136,9 @@ function escribirMensajeBienvenida($usuario)
 
 
 /**
- * ****COMPLETAR*****
+ * Retorna true si cada caracter de la cadena es una letra del abcedario caso contrario retorna un false
+ * @param string $cadena
+ * @return boolean
  */
 function esPalabra($cadena)
 {
