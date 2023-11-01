@@ -8,7 +8,8 @@ include_once("wordix.php");
 /**************************************/
 
 /* Apellido, Nombre. Legajo. Carrera. mail. Usuario Github */
-/* ****COMPLETAR***** */
+/* -** Martin Paredes ** - legajo FAI-4997 - mail: mdep171@gmail.com - GitHub: tiinch00 */
+/* -** Juan Ignacio Sastre ** - legajo FAI-4491 - mail: js8918657@gmail.com - GitHub : nasusxd */
 
 
 /**************************************/
