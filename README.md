@@ -11,7 +11,3 @@ Universidad Nacional Del Comahue
 
 -** Martin Paredes ** - legajo FAI-4997 - mail: mdep171@gmail.com - GitHub: tiinch00
 -** Juan Ignacio Sastre ** - legajo FAI-4491 - mail: js8918657@gmail.com - GitHub : nasusxd
-<<<<<<< HEAD
-
-=======
->>>>>>> e4ca95344305a040c7ad9d419f5770b8acbfb6af
