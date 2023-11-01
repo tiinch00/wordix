@@ -416,7 +416,7 @@ function seleccionarOpcion(){
 
         if ($opcion < 1 || $opcion > 8 ){
             
-            echo  "Por favor vuelva a ingresar una opcion del 1 al 8";
+            echo  "Por favor vuelva a ingresar una opcion del 1 al 8\n";
         } else {
             $condicion = TRUE;
         }  
@@ -424,4 +424,11 @@ function seleccionarOpcion(){
      }while($condicion == FALSE);
 
      return $opcion;
+}
+
+function cargarPartidas($datosPartida){
+    
+    $partidasGuardadas=[];
+    $n=cont($partidasGuardadas)
+    
 }
