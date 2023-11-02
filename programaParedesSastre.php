@@ -75,7 +75,7 @@ do {
                 $palabraElegida= $coleccionPalabras[$eleccion];
                 jugarWordix($palabraElegida, strtolower($usuario));
             }else{
-                echo "ERROR MOGOLICO\n";
+                echo "ERROR \n";
             }
             
             break;

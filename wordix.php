@@ -430,5 +430,14 @@ function cargarPartidas($datosPartida){
     
     $partidasGuardadas=[];
     $n=cont($partidasGuardadas);
-    
+    $coleccionPartidas[0] = ["palabraWordix "=> "QUESO" , "jugador" => "majo", "intentos"=> 0, "puntaje" => 0]
+    $coleccionPartidas[1] = ["palabraWordix "=> "CASAS" , "jugador" => "rudolf", "intentos"=> 3, "puntaje" => 14]
+    $coleccionPartidas[2] = ["palabraWordix "=> "QUESO" , "jugador" => "pink2000", "intentos"=> 6, "puntaje" => 10]
+    $coleccionPartidas[3] = ["palabraWordix "=> "PERRO" , "jugador" => "pedro12", "intentos"=> 3,"puntaje"=> 5]
+    $coleccionPartidas[4] = ["palabraWordix "=> "LETRA",  "jugador" => "nasus", "intentos"=> 1, "puntaje"=> 0 ]
+    $coleccionPartidas[5] = ["palabraWordix" => "MUJER",  "jugador" => "dog123", "intentos" => 4, "puntaje"=> 8 ]
+    $coleccionPartidas[6] = ["palabraWordix" => "CASAS",  "jugador" => "rudolf", "intentos"=> 6, "puntaje"=> ]
+    $coleccionPartidas[7] = ["palavraWordix" ]
+    $coleccionPartidas[8] = ["palavraWordix" ]
+    $coleccionPartidas[9] = ["palavraWordix" ]
 }
