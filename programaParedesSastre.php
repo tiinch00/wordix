@@ -51,51 +51,62 @@ function cargarColeccionPalabras()
 
 //Proceso:
 
-$partida = jugarWordix("MELON", strtolower("MaJo"));
+//$partida = jugarWordix("MELON", strtolower("MaJo"));
 //print_r($partida);
 //imprimirResultado($partida);
 
 
 
-/*
-do {
-    $opcion = ...;
 
-    
+do {
+    $opcion=seleccionarOpcion();
+    $cantPalabras=count(cargarColeccionPalabras());
+    $coleccionPalabras=cargarColeccionPalabras();
+
+
     switch ($opcion) {
         case 1: 
-            Jugar al wordix con una palabra elegida
-
+            //Jugar al wordix con una palabra elegida
+            echo "Ingrese su usuario: ";
+            $usuario=trim(fgets(STDIN));
+            echo "Ingrese el numero de palabra para jugar(entre 1 y $cantPalabras ): ";
+            $eleccion=trim(fgets(STDIN))-1;
+            if(($eleccion>=0)&&($eleccion<$cantPalabras)){
+                $palabraElegida= $coleccionPalabras[$eleccion];
+                jugarWordix($palabraElegida, strtolower($usuario));
+            }else{
+                echo "ERROR MOGOLICO\n";
+            }
+            
             break;
         case 2: 
-            Jugar al wordix con una palabra aleatoria
+           // Jugar al wordix con una palabra aleatoria
 
 
             break;
         case 3: 
-            Mostrar una partida
+            //Mostrar una partida
 
             break;
         case 4:
-            Mostrar la primer partida ganadora
+            //Mostrar la primer partida ganadora
             //...
         case 5:
-            Mostrar resumen de Jugador
+            //Mostrar resumen de Jugador
 
         case 6:
-             Mostrar listado de partidas ordenadas por jugador y por palabra
+             //Mostrar listado de partidas ordenadas por jugador y por palabra
 
         case 7:
-            Agregar una palabra de 5 letras a Wordix
+            //Agregar una palabra de 5 letras a Wordix
         
         case 8:
-            Salir
+            //Salir
 
     }
 } while ($opcion != 8);
-*/
 
 
 
 
-//
+

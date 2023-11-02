@@ -409,14 +409,14 @@ function seleccionarOpcion(){
         echo "7) Agregar una palabra de 5 letras a Wordix\n";
         echo "8) salir\n";
 
-        echo "Ingrese su opcion deseada";
+        echo "Ingrese su opcion deseada: ";
         $opcion = trim(fgets(STDIN));
 
         $condicion = FALSE;
 
         if ($opcion < 1 || $opcion > 8 ){
             
-            echo  "Por favor vuelva a ingresar una opcion del 1 al 8\n";
+            echo  "\e[1;37;41m Por favor vuelva a ingresar una opcion del 1 al 8\e[0m\n";
         } else {
             $condicion = TRUE;
         }  
@@ -429,6 +429,6 @@ function seleccionarOpcion(){
 function cargarPartidas($datosPartida){
     
     $partidasGuardadas=[];
-    $n=cont($partidasGuardadas)
+    $n=cont($partidasGuardadas);
     
 }
